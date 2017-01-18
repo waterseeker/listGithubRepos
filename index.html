@@ -1,14 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>MyGithubRepos</title>
+    <title>myGitHubRepos</title>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script type="text/javascript">
         $(function(){
             alert("My First Jquery Test");
-        });
-        $(function() {
-            $("#github-projects").loadRepositories("waterseeker");
         });
     </script>
   </head>
@@ -16,5 +13,9 @@
     <div id="github-projects"></div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="/Users/wayneburris/Desktop/Projects/listGithubRepos/scripts/github.js"></script>
+    <script>$(document).ready(function() {
+            $("#github-projects").loadRepositories("waterseeker");
+        });
+    </script>
   </body>
 </html>
