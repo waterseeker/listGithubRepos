@@ -9,7 +9,7 @@ jQuery.fn.loadRepositories = function(username) {
   $.githubUserRepositories(username, function(data) {
     var repos = data.data;
     sortByNumberOfWatchers(repos);
- 
+    console.log(repos);
     var list = $('<dl/>');
     target.empty().append(list);
     $(repos).each(function() {
@@ -18,9 +18,9 @@ jQuery.fn.loadRepositories = function(username) {
     });
   });
  
-  function sortByNumberOfWatchers(repos) {
+  function sortByName(repos) {
     repos.sort(function(a,b) {
-      return b.watchers - a.watchers;
+      return a.name > b.name;
     });
   }
 };
