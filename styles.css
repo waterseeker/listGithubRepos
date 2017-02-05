@@ -5,10 +5,14 @@ button {
     margin-top: 1em;
     background-color: green;
     color: white;
+    border-radius: 1em;
 }
 
 #myRepos {
-    padding-top: 2em;
+    padding-top: 1em;
+    border: solid black 0.5em;
+    padding-bottom: 1em;
+
 }
 #myRepos li {
     list-style-type: none;
