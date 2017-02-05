@@ -2,7 +2,7 @@ $('document').ready(function() {
     const endpoint = 'https://api.github.com/users/waterseeker/repos';
     const repos = [];
 
-   $('button').click(function() {
+   $('button').one('click', function() {
        $.get(endpoint, function(data) {
            repos.push(...data);
            console.log(repos);
