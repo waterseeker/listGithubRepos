@@ -1,21 +1,30 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>myGitHubRepos</title>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <script type="text/javascript">
-        $(function(){
-            alert("My First Jquery Test");
-        });
-    </script>
-  </head>
-  <body>
-    <div id="github-projects"></div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <script src="/Users/wayneburris/Desktop/Projects/listGithubRepos/scripts/github.js"></script>
-    <script>$(document).ready(function() {
-            $("#github-projects").loadRepositories("waterseeker");
-        });
-    </script>
-  </body>
+    <head>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="styles.css">   
+    </head>
+    <body>
+        <div>
+            <div>
+                <div class="col-md-12">
+                    <button type="button" class="btn btn-primary">Click to View My GitHub Repos</button>
+                </div>
+            </div>
+            <div>
+                <div class="col-md-12">
+                    <h1>My GitHub Repositories</h1>
+                    <ul id="myRepos">
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="scripts.js"></script>
+        
+    </body>
 </html>

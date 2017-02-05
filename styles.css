@@ -1,0 +1,20 @@
+body {
+    text-align: center;
+}
+button {
+    margin-top: 2em;
+}
+
+#myRepos {
+    padding-top: 2em;
+}
+#myRepos li {
+    list-style-type: none;
+    padding: 1em 1em;
+    margin-bottom: 0.5em;
+    font-size: 1em;
+}
+
+a {
+    text-decoration: none;
+}
